@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andrea Habáňová — Grafik & Developer</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Magnetic cursor -->
+        <div class="custom-cursor"></div>
+
+        <nav>
+            <div class="nav-container">
+                <div class="nav-logo">AH</div>
+                <ul class="nav-links">
+                    <li><a href="#about">O mně</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <!-- <p class="hero-intro">Grafický design × Vývoj</p> -->
+                <h1>Andrea<br />Habáňová</h1>
+                <p class="hero-subtitle">
+                    Baví mě grafika a vývoj.<br />
+                    Od učebnic po weby.
+                </p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary"
+                        >Zobrazit práci</a
+                    >
+                    <a
+                        href="files/cv_habanova.pdf"
+                        class="btn btn-secondary"
+                        target="_blank"
+                        download
+                        >Stáhnout CV</a
+                    >
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-container">
+                    <img src="images/andrea.jpg" alt="Andrea Habáňová" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header reveal">
+                <h2 class="section-title">O mně</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="experience-item reveal-left">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Vývojář aplikací</h3>
+                            <p class="experience-company">Jetveo</p>
+                            <p class="experience-duration">
+                                07/2023 — současnost
+                            </p>
+                        </div>
+                        <p class="experience-description">
+                            Vývoj aplikací v low-code platformě jetveo.io (C#,
+                            HTML, CSS). Samostatná aktivní komunikace s klienty
+                            a analýza požadavků. Testování správné funkčnosti
+                            platformy a správa tasků v Jira.
+                        </p>
+                    </div>
+
+                    <div class="experience-item reveal-left">
+                        <div class="experience-header">
+                            <h3 class="experience-title">
+                                Grafik interaktivních titulů
+                            </h3>
+                            <p class="experience-company">
+                                Nakladatelství Nová Škola
+                            </p>
+                            <p class="experience-duration">2017 — 2025</p>
+                        </div>
+                        <p class="experience-description">
+                            Tvorba interaktivních učebnic, konzultace s autory.
+                            Spolupráce při tvorbě ilustrací a jejich
+                            digitalizaci. Organizace práce v rámci oddělení
+                            (vedení týmu). Spolupráce na vývoji interního
+                            programu a nových doplňkových aplikací. Spolupráce
+                            na UX/UI designu a tvorba grafických prvků ve
+                            výukové aplikaci. Příprava tištěných učebnic —
+                            kompletní sazba v Adobe InDesign.
+                        </p>
+                    </div>
+
+                    <div class="education-section reveal-left">
+                        <div class="education-item">
+                            <h4 class="education-title">Vzdělání</h4>
+                            <p class="education-school">
+                                Fakulta informatiky, Masarykova univerzita Brno
+                            </p>
+                            <p class="education-field">
+                                Aplikovaná informatika — specializace grafický
+                                design
+                            </p>
+                            <p class="education-year">2015–2017</p>
+                            <p class="education-school">
+                                Gymnázium Jana Blahoslava a Střední pedagogická
+                                škola Přerov
+                            </p>
+                            <p class="education-field">
+                                Gymnázium – zakončeno maturitní zkouškou
+                            </p>
+                            <p class="education-year">2010–2014</p>
+                        </div>
+
+                        <div class="education-item">
+                            <h4 class="education-title">Kurzy</h4>
+                            <table class="course-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="course-name">
+                                            Objektově orientované programování
+                                        </td>
+                                        <td class="course-org">
+                                            VŠB–TU Ostrava
+                                        </td>
+                                        <td class="course-year">2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="course-name">
+                                            JavaScript 2
+                                        </td>
+                                        <td class="course-org">Czechitas</td>
+                                        <td class="course-year">2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="course-name">
+                                            JavaScript 1
+                                        </td>
+                                        <td class="course-org">Czechitas</td>
+                                        <td class="course-year">2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="course-name">
+                                            HTML a CSS 1
+                                        </td>
+                                        <td class="course-org">Czechitas</td>
+                                        <td class="course-year">2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-container reveal-right">
+                    <div class="skills-grid stagger-children">
+                        <div class="skill-group">
+                            <h4>Design</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Adobe InDesign</span>
+                                <span class="skill-item">Photoshop</span>
+                                <span class="skill-item">Illustrator</span>
+                                <span class="skill-item">Figma</span>
+                                <span class="skill-item">Framer</span>
+                                <span class="skill-item">Affinity</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h4>Development</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">C#</span>
+                                <span class="skill-item">HTML & CSS</span>
+                                <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">Atlassian Jira</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h4>Jazyky</h4>
+                            <div class="skill-list">
+                                <span class="skill-item"
+                                    >Čeština — rodilý mluvčí</span
+                                >
+                                <span class="skill-item">Angličtina — C1</span>
+                                <span class="skill-item">Němčina — A2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="section-header reveal">
+                <h2 class="section-title">Projekty</h2>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image-wrapper">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                src="images/mhphotography.png"
+                                alt="Web pro fotografa"
+                                class="portfolio-image"
+                            />
+                        </a>
+                    </div>
+                    <p class="portfolio-type">Web Design & Development</p>
+                    <h3 class="portfolio-title">MH Photography</h3>
+                    <p class="portfolio-description">
+                        Portfolio web pro fotografa zaměřeného na svatební a
+                        portrétní fotografie.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            Web
+                        </a>
+
+                        <a
+                            href="https://github.com/ahabanova/fotograf_web"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image-wrapper">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                src="images/mhphotography.png"
+                                alt="Web pro fotografa"
+                                class="portfolio-image"
+                            />
+                        </a>
+                    </div>
+                    <p class="portfolio-type">Web Design & Development</p>
+                    <h3 class="portfolio-title">MH Photography</h3>
+                    <p class="portfolio-description">
+                        Portfolio web pro fotografa zaměřeného na svatební a
+                        portrétní fotografie.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            Web
+                        </a>
+
+                        <a
+                            href="https://github.com/ahabanova/fotograf_web"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image-wrapper">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                src="images/mhphotography.png"
+                                alt="Web pro fotografa"
+                                class="portfolio-image"
+                            />
+                        </a>
+                    </div>
+                    <p class="portfolio-type">Web Design & Development</p>
+                    <h3 class="portfolio-title">MH Photography</h3>
+                    <p class="portfolio-description">
+                        Portfolio web pro fotografa zaměřeného na svatební a
+                        portrétní fotografie.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            Web
+                        </a>
+
+                        <a
+                            href="https://github.com/ahabanova/fotograf_web"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image-wrapper">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                src="images/mhphotography.png"
+                                alt="Web pro fotografa"
+                                class="portfolio-image"
+                            />
+                        </a>
+                    </div>
+                    <p class="portfolio-type">Web Design & Development</p>
+                    <h3 class="portfolio-title">MH Photography</h3>
+                    <p class="portfolio-description">
+                        Portfolio web pro fotografa zaměřeného na svatební a
+                        portrétní fotografie.
+                    </p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a
+                            href="https://mhphotography.cz"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            Web
+                        </a>
+
+                        <a
+                            href="https://github.com/ahabanova/fotograf_web"
+                            target="_blank"
+                            rel="noopener"
+                            class="portfolio-link"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-item reveal">
+                <div class="portfolio-image-wrapper">
+                    <img src="mg.png" alt="Interaktivní učebnice" class="portfolio-image">
+                </div>
+                <p class="portfolio-type">UX/UI Design & Development</p>
+                <h3 class="portfolio-title">Interaktivní učebnice</h3>
+                <p class="portfolio-description">
+                    Tvorba interaktivních výukových materiálů s grafickými prvky a animacemi. 
+                    Spolupráce na UX/UI designu výukové aplikace.
+                </p>
+                <div class="portfolio-tags">
+                    <span class="tag">UI Design</span>
+                    <span class="tag">InDesign</span>
+                    <span class="tag">Interaktivní design</span>
+                </div>
+            </div> -->
+
+                <!-- <div class="portfolio-item reveal">
+                <div class="portfolio-image-wrapper">
+                    <div style="width: 100%; aspect-ratio: 16/10; background: #f5f5f5; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-border);">
+                        <p style="color: var(--color-text-light); font-size: 1.2rem; font-family: var(--font-serif);">Další projekty</p>
+                    </div>
+                </div>
+                <p class="portfolio-type">Development</p>
+                <h3 class="portfolio-title">Low-code aplikace</h3>
+                <p class="portfolio-description">
+                    Vývoj firemních aplikací v low-code platformě Jetveo. Komunikace s klienty, 
+                    analýza požadavků a implementace řešení.
+                </p>
+                <div class="portfolio-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Jetveo</span>
+                </div>
+            </div> -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-header reveal">
+                <h2 class="section-title">Kontakt</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="contact-info-item">
+                        <p class="contact-label">Místo</p>
+                        <p class="contact-value">Brno</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">
+                            <a href="mailto:ahabanova95@gmail.com"
+                                >ahabanova95@gmail.com</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <p class="contact-label">Telefon</p>
+                        <p class="contact-value">
+                            <a href="tel:+420605319071">605 319 071</a>
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <a
+                            href="https://github.com/ahabanova"
+                            target="_blank"
+                            class="social-link"
+                            >GitHub</a
+                        >
+                        <a
+                            href="https://www.linkedin.com/in/andrea-habanova/"
+                            target="_blank"
+                            class="social-link"
+                            >LinkedIn</a
+                        >
+                    </div>
+                </div>
+
+                <form
+                    action="https://formsubmit.co/ahabanova95@gmail.com"
+                    method="POST"
+                    class="contact-form reveal-right"
+                >
+                    <div class="form-group">
+                        <label for="name" class="form-label">Jméno</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Předmět</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="_subject"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Zpráva</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Odeslat zprávu
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Andrea Habáňová</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
