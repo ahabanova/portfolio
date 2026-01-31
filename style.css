@@ -11,6 +11,16 @@
     --color-border: #e5e5e5;
     --font-serif: "Libre Baskerville", serif;
     --font-sans: "Inter", sans-serif;
+
+    --space-section: 8rem;
+    --space-section-sm: 6rem;
+
+    --space-block-lg: 4rem;
+    --space-block: 3rem;
+    --space-block-sm: 2rem;
+
+    --space-inline: 1.5rem;
+    --space-inline-sm: 1rem;
 }
 
 * {
@@ -38,7 +48,7 @@ body {
     background: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
     cursor: none;
 }
 
@@ -91,8 +101,8 @@ nav {
 
 .nav-logo {
     font-family: var(--font-serif);
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
     letter-spacing: -0.01em;
 }
 
@@ -168,7 +178,7 @@ nav {
 .hero h1 {
     font-family: var(--font-serif);
     font-size: clamp(3.5rem, 10vw, 8rem);
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
     letter-spacing: -0.03em;
     margin-bottom: 2rem;
@@ -180,7 +190,7 @@ nav {
     max-width: 800px;
     margin-bottom: 3rem;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .hero-cta {
@@ -192,7 +202,7 @@ nav {
     padding: 1rem 2.5rem;
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.02em;
     transition: all 0.3s ease;
     border: 1px solid var(--color-text);
@@ -220,38 +230,22 @@ nav {
 
 /* Section Styling */
 section {
-    padding: 8rem 3rem;
+    padding: var(--space-section) 3rem;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .section-header {
-    margin-bottom: 5rem;
-}
-
-.section-label {
-    font-size: 0.85rem;
-    color: var(--color-accent);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-block-lg);
 }
 
 .section-title {
     font-family: var(--font-serif);
     font-size: clamp(2.5rem, 5vw, 4.5rem);
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
-}
-
-.section-description {
-    font-size: 1.15rem;
-    color: var(--color-text-light);
-    max-width: 700px;
-    line-height: 1.8;
 }
 
 /* About Section */
@@ -271,14 +265,9 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.highlight {
-    color: var(--color-text);
-    font-weight: 400;
-}
-
 .experience-item {
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
+    margin-bottom: var(--space-block);
+    padding-bottom: var(--space-block);
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -323,7 +312,7 @@ section {
 
 .skills-grid {
     display: grid;
-    gap: 2.5rem;
+    gap: var(--space-block);
 }
 
 .skill-group h4 {
@@ -352,8 +341,7 @@ section {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 4rem;
-    margin-top: 4rem;
+    gap: var(--space-block-lg);
 }
 
 .portfolio-item {
@@ -415,8 +403,7 @@ section {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8rem;
-    margin-top: 4rem;
+    gap: var(--space-block-lg);
 }
 
 .contact-info-item {
@@ -453,7 +440,7 @@ section {
     margin-top: 3rem;
 }
 
-.social-link {
+/* .social-link {
     font-size: 0.9rem;
     color: var(--color-text);
     text-decoration: none;
@@ -462,7 +449,7 @@ section {
 
 .social-link:hover {
     color: var(--color-accent);
-}
+} */
 
 .contact-form {
     display: grid;
@@ -526,7 +513,7 @@ textarea {
 /* Footer */
 footer {
     border-top: 1px solid var(--color-border);
-    padding: 3rem;
+    padding: var(--space-block) 3rem;
     text-align: center;
     font-size: 0.85rem;
     color: var(--color-text-light);
@@ -543,13 +530,13 @@ footer {
     }
 
     section {
-        padding: 6rem 2rem;
+        padding: var(--space-section-sm) 2rem;
     }
 
     .about-grid,
     .contact-content {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: var(--space-block);
     }
 
     .skills-container {
@@ -772,12 +759,12 @@ button:hover {
 
 /* Education section styling */
 .education-section {
-    margin-top: 3rem;
+    margin-top: var(--space-block-lg);
 }
 
 .education-item {
-    margin-bottom: 2.5rem;
-    padding: 2rem;
+    margin-bottom: var(--space-block-sm);
+    padding: var(--space-block);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 2px;
@@ -810,6 +797,7 @@ button:hover {
 .education-school {
     font-size: 1.05rem;
     font-weight: 500;
+    margin-top: 2rem;
     margin-bottom: 0.3rem;
 }
 
@@ -823,23 +811,6 @@ button:hover {
     font-size: 0.85rem;
     color: var(--color-text-light);
     letter-spacing: 0.02em;
-}
-
-.course-list {
-    display: grid;
-    gap: 0.8rem;
-    margin-top: 1rem;
-}
-
-.course-item {
-    display: grid;
-    grid-template-columns: 2fr 1fr auto;
-    gap: 1rem;
-    align-items: center;
-    padding: 0.8rem 1rem;
-    background: var(--color-bg);
-    border-left: 2px solid transparent;
-    transition: border-left-color 0.3s ease;
 }
 
 .course-name {
@@ -858,10 +829,33 @@ button:hover {
     text-align: right;
 }
 
+.course-table {
+    border-collapse: separate;
+    border-spacing: 0 0.8rem;
+    width: 100%;
+}
+
+.course-table td {
+    padding: 0.8rem 1.2rem;
+    background: var(--color-bg);
+}
+
+.course-table tr td:first-child {
+    font-weight: 500;
+}
+
+.course-org {
+    color: var(--color-text-light);
+}
+
+.course-year {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
 /* Simplified tag hover */
 .tag {
     transition: all 0.3s ease;
-    cursor: default;
 }
 
 .tag:hover {
@@ -910,8 +904,6 @@ textarea:focus {
 /* Education items with border animation */
 .education-item {
     position: relative;
-    transform: translateZ(0);
-    backface-visibility: hidden;
 }
 
 .education-item svg {
@@ -953,6 +945,7 @@ textarea:focus {
 
 .portfolio-image-wrapper {
     margin: -3rem -3rem 2rem -3rem;
+    overflow: hidden;
 }
 
 .portfolio-item svg {
@@ -975,6 +968,28 @@ textarea:focus {
 
 .portfolio-item:hover svg rect {
     stroke-dashoffset: 0;
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.portfolio-link,
+.social-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.25s ease;
+}
+
+.portfolio-link:hover,
+.social-link:hover {
+    opacity: 1;
 }
 
 /* Form inputs */
@@ -1057,9 +1072,4 @@ textarea:focus {
         max-width: 300px;
         margin: 0 auto;
     }
-}
-
-/* Footer fix */
-footer {
-    margin-top: 6rem;
 }
