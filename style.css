@@ -148,10 +148,6 @@ nav {
     transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-links a:hover svg rect {
-    stroke-dashoffset: 0;
-}
-
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -439,17 +435,6 @@ section {
     gap: 1.5rem;
     margin-top: 3rem;
 }
-
-/* .social-link {
-    font-size: 0.9rem;
-    color: var(--color-text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-link:hover {
-    color: var(--color-accent);
-} */
 
 .contact-form {
     display: grid;
@@ -923,10 +908,6 @@ textarea:focus {
     transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.education-item:hover svg rect {
-    stroke-dashoffset: 0;
-}
-
 /* Course items - no hover effect */
 .course-item {
     display: grid;
@@ -964,10 +945,6 @@ textarea:focus {
     stroke-dasharray: 100;
     stroke-dashoffset: 100;
     transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover svg rect {
-    stroke-dashoffset: 0;
 }
 
 .portfolio-links {
@@ -1072,4 +1049,90 @@ textarea:focus {
         max-width: 300px;
         margin: 0 auto;
     }
+}
+
+/* =========================================================
+   CSS DRAW BORDER – STEP BY STEP (TOP → RIGHT → BOTTOM → LEFT)
+========================================================= */
+
+.portfolio-item,
+.education-item,
+.nav-links a {
+    position: relative;
+}
+
+/* výchozí stav */
+.portfolio-item::after,
+.education-item::after,
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(var(--color-text), var(--color-text)),
+        /* top */ linear-gradient(var(--color-text), var(--color-text)),
+        /* right */ linear-gradient(var(--color-text), var(--color-text)),
+        /* bottom */ linear-gradient(var(--color-text), var(--color-text)); /* left */
+
+    background-position:
+        left top,
+        right top,
+        right bottom,
+        left bottom;
+
+    background-size:
+        0% 1px,
+        /* top */ 1px 0%,
+        /* right */ 0% 1px,
+        /* bottom */ 1px 0%; /* left */
+
+    background-repeat: no-repeat;
+}
+
+/* keyframes pro postupné vykreslení */
+@keyframes drawBorder {
+    0% {
+        background-size:
+            0% 1px,
+            1px 0%,
+            0% 1px,
+            1px 0%;
+    }
+    25% {
+        background-size:
+            100% 1px,
+            1px 0%,
+            0% 1px,
+            1px 0%; /* top done */
+    }
+    50% {
+        background-size:
+            100% 1px,
+            1px 100%,
+            0% 1px,
+            1px 0%; /* top + right done */
+    }
+    75% {
+        background-size:
+            100% 1px,
+            1px 100%,
+            100% 1px,
+            1px 0%; /* top + right + bottom done */
+    }
+    100% {
+        background-size:
+            100% 1px,
+            1px 100%,
+            100% 1px,
+            1px 100%; /* all done */
+    }
+}
+
+/* hover – spustí animaci */
+.portfolio-item:hover::after,
+.education-item:hover::after,
+.nav-links a:hover::after {
+    animation: drawBorder 1s ease forwards;
 }
