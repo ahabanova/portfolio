@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Andrea Habáňová — Grafik & Developer</title>
+        <title>Andrea Habáňová — Developer & Grafik</title>
         <link rel="icon" type="image/x-icon" href="images/logo.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,18 +19,30 @@
 
         <nav>
             <div class="nav-container">
-                <div class="nav-logo">AH</div>
+                <a href="index.html" class="nav-logo-link">
+                    <div class="nav-logo">AH</div>
+                </a>
+
+                <!-- Hamburger button -->
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <ul class="nav-links">
                     <li><a href="#about">O mně</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
+
+            <!-- Overlay for closing menu -->
+            <div class="nav-overlay"></div>
         </nav>
 
         <section class="hero">
             <div class="hero-content">
-                <!-- <p class="hero-intro">Grafický design × Vývoj</p> -->
                 <h1>Andrea<br />Habáňová</h1>
                 <p class="hero-subtitle">
                     Baví mě grafika a vývoj.<br />
@@ -72,10 +84,10 @@
                             </p>
                         </div>
                         <p class="experience-description">
-                            Vývoj aplikací v low-code platformě jetveo.io (C#,
-                            HTML, CSS). Samostatná aktivní komunikace s klienty
-                            a analýza požadavků. Testování správné funkčnosti
-                            platformy a správa tasků v Jira.
+                            Vývoj aplikací v low-code platformě jetveo.io – C#
+                            (včetně LINQ, Razor), HTML/CSS. Samostatná aktivní
+                            komunikace s klienty a analýza požadavků. Testování
+                            správné funkčnosti platformy a správa tasků v Jira.
                         </p>
                     </div>
 
@@ -165,34 +177,33 @@
                 <div class="skills-container reveal-right">
                     <div class="skills-grid stagger-children">
                         <div class="skill-group">
-                            <h4>Design</h4>
-                            <div class="skill-list">
-                                <span class="skill-item">Adobe InDesign</span>
-                                <span class="skill-item">Photoshop</span>
-                                <span class="skill-item">Illustrator</span>
-                                <span class="skill-item">Figma</span>
-                                <span class="skill-item">Framer</span>
-                                <span class="skill-item">Affinity</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-group">
                             <h4>Development</h4>
                             <div class="skill-list">
-                                <span class="skill-item">C#</span>
-                                <span class="skill-item">HTML & CSS</span>
+                                <span class="skill-item">C# + LINQ</span>
+                                <span class="skill-item">Razor</span>
+                                <span class="skill-item">HTML/CSS</span>
                                 <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">Bootstrap</span>
                                 <span class="skill-item">Python</span>
                                 <span class="skill-item">Atlassian Jira</span>
                             </div>
                         </div>
 
                         <div class="skill-group">
+                            <h4>Design</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Adobe InDesign</span>
+                                <span class="skill-item">Photoshop</span>
+                                <span class="skill-item">Illustrator</span>
+                                <span class="skill-item">Affinity</span>
+                                <span class="skill-item">Figma</span>
+                                <span class="skill-item">Framer</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
                             <h4>Jazyky</h4>
                             <div class="skill-list">
-                                <span class="skill-item"
-                                    >Čeština — rodilý mluvčí</span
-                                >
                                 <span class="skill-item">Angličtina — C1</span>
                                 <span class="skill-item">Němčina — A2</span>
                             </div>
@@ -239,18 +250,15 @@
                             target="_blank"
                             rel="noopener"
                             class="portfolio-link"
+                            >Web</a
                         >
-                            Web
-                        </a>
-
                         <a
                             href="https://github.com/ahabanova/fotograf_web"
                             target="_blank"
                             rel="noopener"
                             class="portfolio-link"
+                            >GitHub</a
                         >
-                            GitHub
-                        </a>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
@@ -284,18 +292,15 @@
                             target="_blank"
                             rel="noopener"
                             class="portfolio-link"
+                            >Web</a
                         >
-                            Web
-                        </a>
-
                         <a
                             href="https://github.com/ahabanova/fotograf_web"
                             target="_blank"
                             rel="noopener"
                             class="portfolio-link"
+                            >GitHub</a
                         >
-                            GitHub
-                        </a>
                     </div>
                 </div>
                 <div class="portfolio-item reveal">
@@ -329,101 +334,17 @@
                             target="_blank"
                             rel="noopener"
                             class="portfolio-link"
+                            >Web</a
                         >
-                            Web
-                        </a>
-
                         <a
                             href="https://github.com/ahabanova/fotograf_web"
                             target="_blank"
                             rel="noopener"
                             class="portfolio-link"
+                            >GitHub</a
                         >
-                            GitHub
-                        </a>
                     </div>
                 </div>
-                <div class="portfolio-item reveal">
-                    <div class="portfolio-image-wrapper">
-                        <a
-                            href="https://mhphotography.cz"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                src="images/mhphotography.png"
-                                alt="Web pro fotografa"
-                                class="portfolio-image"
-                            />
-                        </a>
-                    </div>
-                    <p class="portfolio-type">Web Design & Development</p>
-                    <h3 class="portfolio-title">MH Photography</h3>
-                    <p class="portfolio-description">
-                        Portfolio web pro fotografa zaměřeného na svatební a
-                        portrétní fotografie.
-                    </p>
-                    <div class="portfolio-tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Responsive</span>
-                    </div>
-                    <div class="portfolio-links">
-                        <a
-                            href="https://mhphotography.cz"
-                            target="_blank"
-                            rel="noopener"
-                            class="portfolio-link"
-                        >
-                            Web
-                        </a>
-
-                        <a
-                            href="https://github.com/ahabanova/fotograf_web"
-                            target="_blank"
-                            rel="noopener"
-                            class="portfolio-link"
-                        >
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- <div class="portfolio-item reveal">
-                <div class="portfolio-image-wrapper">
-                    <img src="mg.png" alt="Interaktivní učebnice" class="portfolio-image">
-                </div>
-                <p class="portfolio-type">UX/UI Design & Development</p>
-                <h3 class="portfolio-title">Interaktivní učebnice</h3>
-                <p class="portfolio-description">
-                    Tvorba interaktivních výukových materiálů s grafickými prvky a animacemi. 
-                    Spolupráce na UX/UI designu výukové aplikace.
-                </p>
-                <div class="portfolio-tags">
-                    <span class="tag">UI Design</span>
-                    <span class="tag">InDesign</span>
-                    <span class="tag">Interaktivní design</span>
-                </div>
-            </div> -->
-
-                <!-- <div class="portfolio-item reveal">
-                <div class="portfolio-image-wrapper">
-                    <div style="width: 100%; aspect-ratio: 16/10; background: #f5f5f5; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-border);">
-                        <p style="color: var(--color-text-light); font-size: 1.2rem; font-family: var(--font-serif);">Další projekty</p>
-                    </div>
-                </div>
-                <p class="portfolio-type">Development</p>
-                <h3 class="portfolio-title">Low-code aplikace</h3>
-                <p class="portfolio-description">
-                    Vývoj firemních aplikací v low-code platformě Jetveo. Komunikace s klienty, 
-                    analýza požadavků a implementace řešení.
-                </p>
-                <div class="portfolio-tags">
-                    <span class="tag">C#</span>
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">Jetveo</span>
-                </div>
-            </div> -->
             </div>
         </section>
 
