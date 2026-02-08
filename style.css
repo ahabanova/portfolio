@@ -931,6 +931,7 @@ nav {
 
 .nav-overlay {
     display: none;
+    pointer-events: none;
 }
 
 /* =========================================================
@@ -1072,7 +1073,7 @@ nav {
 
     .nav-overlay.active {
         opacity: 1;
-        pointer-events: all;
+        pointer-events: auto;
     }
 
     /* Sections */

@@ -94,7 +94,10 @@ function setActiveNav(scrollY) {
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
+        if (anchor.closest("form")) return;
+
         e.preventDefault();
+
         const target = document.querySelector(anchor.getAttribute("href"));
         if (!target) return;
 
