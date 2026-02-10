@@ -937,6 +937,11 @@ nav {
    TABLET (768px - 1024px)
 ========================================================= */
 @media (max-width: 1024px) {
+    .custom-cursor {
+        left: 60px;
+        top: 45px;
+    }
+
     section {
         padding: 4rem 2.5rem;
     }
@@ -978,6 +983,11 @@ nav {
    MOBILE (below 768px)
 ========================================================= */
 @media (max-width: 800px) {
+    .custom-cursor {
+        left: 45px;
+        top: 35px;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -1166,6 +1176,11 @@ nav {
    EXTRA SMALL MOBILE (below 400px) - CONSOLIDATED
 ========================================================= */
 @media (max-width: 400px) {
+    .custom-cursor {
+        left: 32px;
+        top: 25px;
+    }
+
     /* Prevent horizontal overflow */
     html,
     body {
