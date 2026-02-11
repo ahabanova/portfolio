@@ -1068,7 +1068,6 @@ nav {
         font-size: 1.1rem;
     }
 
-    /* Overlay - removed dark background */
     .nav-overlay {
         display: block;
         position: fixed;
@@ -1121,6 +1120,10 @@ nav {
         text-align: center;
     }
 
+    .about-grid {
+        gap: 2rem !important;
+    }
+
     /* Portfolio - 1 column on mobile */
     .portfolio-grid {
         grid-template-columns: 1fr;
@@ -1169,6 +1172,36 @@ nav {
     /* Footer */
     footer {
         padding: 2rem 1.5rem;
+    }
+}
+
+/* =========================================================
+   MEDIUM MOBILE (400px - 600px) - Pro iPhone 14/15/16 Pro a podobná zařízení
+========================================================= */
+@media (min-width: 401px) and (max-width: 600px) {
+    section {
+        padding: 3rem 1.5rem;
+        overflow-x: hidden !important;
+    }
+
+    .about-grid {
+        gap: 1.25rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .about-content,
+    .skills-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .experience-item,
+    .education-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 }
 
@@ -1227,6 +1260,7 @@ nav {
     .skills-container {
         position: static;
         max-width: 100% !important;
+        width: 100% !important;
         box-sizing: border-box !important;
     }
 
@@ -1235,11 +1269,12 @@ nav {
     .education-item,
     .education-section {
         max-width: 100% !important;
+        width: 100% !important;
         box-sizing: border-box !important;
     }
 
     .about-grid {
-        gap: 2rem !important;
+        gap: 1.5rem !important;
     }
 
     .experience-item {
