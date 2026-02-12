@@ -587,6 +587,14 @@ section {
     margin-top: 1.5rem;
 }
 
+.experience-link {
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.25s ease;
+}
+
 .portfolio-link,
 .social-link {
     font-size: 0.85rem;
@@ -598,6 +606,7 @@ section {
     transition: opacity 0.25s ease;
 }
 
+.experience-link:hover,
 .portfolio-link:hover,
 .social-link:hover {
     opacity: 1;
