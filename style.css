@@ -1,7 +1,7 @@
 :root {
     --color-bg: #fafaf9;
     --color-text: #1a1a1a;
-    --color-text-light: #737373;
+    --color-text-light: #626262;
     --color-accent: #1a1a1a;
     --color-accent-dark: #000000;
     --color-accent-light: #404040;
@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-family: var(--font-sans);
     background: var(--color-bg);
     color: var(--color-text);
