@@ -57,6 +57,22 @@ a {
     cursor: none;
 }
 
+input,
+textarea {
+    cursor: text;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-cursor-light);
+    outline-offset: 4px;
+}
+
+.btn:focus-visible,
+.submit-btn:focus-visible {
+    outline-offset: 3px;
+}
+
 .custom-cursor {
     position: fixed;
     width: 80px;
@@ -609,6 +625,16 @@ section {
     transition: opacity 0.25s ease;
 }
 
+.link,
+.about-link {
+    text-decoration: underline;
+    text-decoration-color: var(--color-cursor-light);
+    text-underline-offset: 5px;
+}
+.link:hover {
+    text-decoration-color: var(--color-cursor);
+}
+
 .portfolio-link,
 .social-link {
     font-size: 0.85rem;
@@ -635,7 +661,7 @@ section {
 }
 
 .contact-intro p {
-    font-size: 1.05rem;
+    max-width: 70ch;
     line-height: 1.9;
     color: var(--color-text-light);
 }
@@ -1076,6 +1102,7 @@ nav {
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1000;
+        visibility: hidden;
     }
 
     .nav-links.active {
@@ -1100,6 +1127,7 @@ nav {
     .nav-overlay.active {
         opacity: 1;
         pointer-events: auto;
+        visibility: visible;
     }
 
     section {

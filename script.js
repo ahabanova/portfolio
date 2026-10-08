@@ -55,19 +55,6 @@ function handleReveal() {
     });
 }
 
-// PARALLAX
-
-const parallaxItems = document.querySelectorAll(".parallax");
-
-function handleParallax(scrollY) {
-    if (window.innerWidth <= 1024) return;
-
-    parallaxItems.forEach((el) => {
-        const speed = el.dataset.speed || 0.1;
-        el.style.transform = `translateY(${scrollY * speed}px)`;
-    });
-}
-
 // ACTIVE NAV LINK
 
 const sections = document.querySelectorAll("section[id]");
@@ -151,7 +138,7 @@ if (navOverlay) {
 // Close menu when clicking on a link
 navLinksItems.forEach((link) => {
     link.addEventListener("click", () => {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 800) {
             toggleMenu();
         }
     });
@@ -171,6 +158,5 @@ document.addEventListener("keydown", (e) => {
 // INIT
 
 window.addEventListener("load", () => {
-    document.body.style.opacity = "1";
     handleReveal();
 });
