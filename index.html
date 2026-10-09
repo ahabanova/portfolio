@@ -40,6 +40,14 @@
             href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -51,7 +59,11 @@
                     <div class="nav-logo">AH</div>
                 </a>
 
-                <button class="hamburger" aria-label="Menu">
+                <button
+                    class="hamburger"
+                    aria-label="Menu"
+                    aria-expanded="false"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -72,7 +84,7 @@
                 <h1>Andrea<br />Habáňová</h1>
                 <p class="hero-subtitle">
                     Baví mě grafika a vývoj.<br />
-                    Od učebnic po weby.
+                    Od webu po tiskoviny.
                 </p>
                 <div class="hero-cta">
                     <a href="#portfolio" class="btn btn-primary"
@@ -88,7 +100,13 @@
             </div>
             <div class="hero-photo">
                 <div class="photo-container">
-                    <img src="images/andrea.jpg" alt="Andrea Habáňová" />
+                    <img
+                        src="images/andrea.jpg"
+                        alt="Andrea Habáňová"
+                        width="1024"
+                        height="1024"
+                        fetchpriority="high"
+                    />
                 </div>
             </div>
         </section>
@@ -98,198 +116,161 @@
                 <h2 class="section-title">O mně</h2>
             </div>
 
-            <div class="about-intro reveal">
-                <p>
-                    Jsem vývojářka a grafička z Brna. Baví mě propojovat
-                    technickou a kreativní stránku projektů – od vývoje aplikací
-                    a tvorby webových stránek až po návrh vizuální identity a
-                    sazbu tiskovin.
-                </p>
-
-                <p>
-                    Mám zkušenosti s vývojem webových aplikací v C#/.NET a
-                    frontendovými technologiemi. Několik let jsem se také
-                    věnovala tvorbě interaktivních a tištěných učebnic. V roce
-                    2026 jsem graficky upravila a vysázela básnickou sbírku
-                    <strong
-                        ><a
-                            class="link about-link"
+            <div class="about-intro">
+                <div class="about-intro-text reveal-left">
+                    <p>
+                        Jsem vývojářka a grafička z Brna. Baví mě propojovat
+                        technickou a kreativní stránku projektů – od vývoje
+                        aplikací a tvorby webových stránek až po návrh vizuální
+                        identity a sazbu tiskovin.
+                    </p>
+                    <p>
+                        Mám zkušenosti s vývojem webových aplikací v C#/.NET a
+                        frontendovými technologiemi. Několik let jsem se také
+                        věnovala tvorbě interaktivních a tištěných učebnic. V
+                        roce 2026 jsem graficky upravila a vysázela básnickou
+                        sbírku
+                        <a
+                            class="link"
                             href="https://bookla.cz/eshop/produkt/stripky-dusi-aneb-meditace-o-vsem-a-nicem"
                             target="_blank"
                             rel="noopener"
                             >Střípky duší aneb meditace o všem a ničem</a
-                        ></strong
-                    >.
-                </p>
+                        >.
+                    </p>
+                </div>
 
-                <p>
-                    <strong
-                        >Aktuálně hledám nové pracovní příležitosti v oblasti
-                        vývoje.</strong
-                    >
-                </p>
+                <aside class="about-status reveal-right">
+                    <p class="about-status-label">
+                        <span class="status-dot"></span>Otevřená novým
+                        příležitostem
+                    </p>
+                    <p>
+                        Hledám práci v oblasti vývoje. Ráda se zapojím i do
+                        menších webových a grafických projektů.
+                    </p>
+                    <div class="about-status-links">
+                        <a href="#contact" class="link">Napište mi</a>
+                        <a
+                            href="files/cv-andrea-habanova.pdf"
+                            target="_blank"
+                            class="link"
+                            >Stáhnout CV</a
+                        >
+                    </div>
+                </aside>
             </div>
 
             <div class="about-grid">
                 <div class="about-content">
-                    <div class="experience-item reveal-left">
-                        <div class="experience-header">
-                            <h3 class="experience-title">
-                                Junior Frontend Developer
-                            </h3>
-                            <p class="experience-company">
-                                HotelTime Solutions
+                    <div class="experience-section">
+                        <div class="experience-item reveal-left">
+                            <div class="experience-header">
+                                <h3 class="experience-title">
+                                    Junior Frontend Developer
+                                </h3>
+                                <p class="experience-company">
+                                    HotelTime Solutions
+                                </p>
+                                <p class="experience-duration">
+                                    06/2026 – 10/2026
+                                </p>
+                            </div>
+                            <p class="experience-description">
+                                Úpravy a rozvoj existujících webových aplikací
+                                postavených na <strong>ASP.NET MVC</strong> a
+                                <strong>ASP.NET Web Forms</strong> s využitím
+                                <strong>C#</strong>,
+                                <strong>JavaScriptu</strong>,
+                                <strong>TypeScriptu</strong>,
+                                <strong>HTML</strong> a <strong>CSS</strong>.
+                                Základní práce s <strong>SQL</strong>,
+                                implementace menších funkčních a vizuálních
+                                úprav a testování jejich funkčnosti. Součástí
+                                práce byly také úpravy návrhů uživatelského
+                                rozhraní ve <strong>Figmě</strong> a správa
+                                úkolů v <strong>ClickUp</strong>.
                             </p>
-                            <p class="experience-duration">06/2026 – 10/2026</p>
                         </div>
-                        <p class="experience-description">
-                            Úpravy a rozvoj existujících webových aplikací
-                            postavených na <strong>ASP.NET MVC</strong> a
-                            <strong>ASP.NET Web Forms</strong> s využitím
-                            <strong>C#</strong>, <strong>JavaScriptu</strong>,
-                            <strong>TypeScriptu</strong>,
-                            <strong>HTML</strong> a <strong>CSS</strong>.
-                            Základní práce s <strong>SQL</strong>, implementace
-                            menších funkčních a vizuálních úprav a testování
-                            jejich funkčnosti. Součástí práce byly také úpravy
-                            návrhů uživatelského rozhraní ve
-                            <strong>Figmě</strong> a správa úkolů v
-                            <strong>ClickUp</strong>.
-                        </p>
-                    </div>
-                    <div class="experience-item reveal-left">
-                        <div class="experience-header">
-                            <h3 class="experience-title">Vývojář aplikací</h3>
-                            <p class="experience-company">Jetveo</p>
-                            <p class="experience-duration">07/2023 – 03/2026</p>
-                        </div>
-                        <p class="experience-description">
-                            Vývoj komplexních B2B aplikací v low-code platformě
-                            Jetveo, postavené na <strong>.NET 8</strong> a
-                            <strong>Entity Frameworku</strong>. Práce především
-                            v <strong>C#</strong> (včetně
-                            <strong>LINQ</strong> a <strong>Razor</strong>) a
-                            <strong>HTML/CSS</strong>. Zapojení do celého
-                            procesu od analýzy požadavků klienta až po nasazení
-                            aplikace, testování funkčnosti platformy i aplikací
-                            a správa úkolů v
-                            <strong>Jira</strong>.<br /><br />Mezi realizované
-                            projekty patří například aplikace pro správu budov s
-                            integrací kalendáře Outlook pro přehled absencí
-                            zaměstnanců nebo automatizovaný rezervační systém
-                            pro fitness centrum s platební bránou Stripe a
-                            přístupem přes chytrý zámek Nuki.
-                        </p>
-                    </div>
-
-                    <div class="experience-item reveal-left">
-                        <div class="experience-header">
-                            <h3 class="experience-title">
-                                Grafik interaktivních titulů
-                            </h3>
-                            <p class="experience-company">
-                                Nakladatelství Nová Škola
+                        <div class="experience-item reveal-left">
+                            <div class="experience-header">
+                                <h3 class="experience-title">
+                                    Vývojář aplikací
+                                </h3>
+                                <p class="experience-company">Jetveo</p>
+                                <p class="experience-duration">
+                                    07/2023 – 03/2026
+                                </p>
+                            </div>
+                            <p class="experience-description">
+                                Vývoj komplexních B2B aplikací v low-code
+                                platformě Jetveo, postavené na
+                                <strong>.NET 8</strong> a
+                                <strong>Entity Frameworku</strong>. Práce
+                                především v <strong>C#</strong> (včetně
+                                <strong>LINQ</strong> a <strong>Razor</strong>)
+                                a <strong>HTML/CSS</strong>. Zapojení do celého
+                                procesu od analýzy požadavků klienta až po
+                                nasazení aplikace, testování funkčnosti
+                                platformy i aplikací a správa úkolů v
+                                <strong>Jira</strong>.<br /><br />Mezi
+                                realizované projekty patří například aplikace
+                                pro správu budov s integrací kalendáře Outlook
+                                pro přehled absencí zaměstnanců nebo
+                                automatizovaný rezervační systém pro fitness
+                                centrum s platební bránou Stripe a přístupem
+                                přes chytrý zámek Nuki.
                             </p>
-                            <p class="experience-duration">2017 – 2025</p>
-                        </div>
-                        <p class="experience-description">
-                            Tvorba interaktivních učebnic, konzultace s autory,
-                            spolupráce na ilustracích a jejich digitalizaci.
-                            Organizace práce v rámci oddělení a vedení týmu.
-                            Podíl na vývoji interního programu a doplňkových
-                            aplikací, spolupráce na UX/UI designu a tvorba
-                            grafických prvků
-                            <a
-                                class="link about-link"
-                                href="https://ucebnice.online/miuc/index.php"
-                                target="_blank"
-                                rel="noopener"
-                                >výukové aplikace</a
-                            >. Příprava tištěných učebnic včetně kompletní sazby
-                            v
-                            <strong>Adobe InDesignu</strong>.<br /><br />Jedním
-                            z realizovaných titulů je soubor
-                            <strong>Okénko do češtiny</strong> – výukové
-                            materiály pro výuku českého jazyka určené
-                            vícejazyčným dětem. Projekt vznikl ve spolupráci s
-                            <a
-                                class="link about-link"
-                                href="https://www.linkedin.com/in/jana-nahodilova-536a47232/"
-                                target="_blank"
-                                rel="noopener"
-                                >Janou Nahodilovou</a
-                            >
-                            z
-                            <a
-                                class="link about-link"
-                                href="https://www.okenko.uk/"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                České a slovenské školy Okénko v Londýně</a
-                            >.
-                        </p>
-                    </div>
-
-                    <div class="education-section reveal-left">
-                        <div class="education-item">
-                            <h4 class="education-title">Vzdělání</h4>
-                            <p class="education-school">
-                                Fakulta informatiky, Masarykova univerzita Brno
-                            </p>
-                            <p class="education-field">
-                                Aplikovaná informatika – specializace grafický
-                                design
-                            </p>
-                            <p class="education-year">2015 – 2017</p>
-                            <p class="education-school">
-                                Gymnázium Jana Blahoslava a Střední pedagogická
-                                škola Přerov
-                            </p>
-                            <p class="education-field">
-                                Gymnázium – zakončeno maturitní zkouškou
-                            </p>
-                            <p class="education-year">2010 – 2014</p>
                         </div>
 
-                        <div class="education-item">
-                            <h4 class="education-title">Kurzy</h4>
-                            <table class="course-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="course-name">
-                                            Programování WWW aplikací &
-                                            Objektově orientované programování v
-                                            C#
-                                        </td>
-                                        <td class="course-org">
-                                            VŠB–TU Ostrava
-                                        </td>
-                                        <td class="course-year">2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="course-name">
-                                            JavaScript 2
-                                        </td>
-                                        <td class="course-org">Czechitas</td>
-                                        <td class="course-year">2023</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="course-name">
-                                            JavaScript 1
-                                        </td>
-                                        <td class="course-org">Czechitas</td>
-                                        <td class="course-year">2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="course-name">
-                                            HTML a CSS 1
-                                        </td>
-                                        <td class="course-org">Czechitas</td>
-                                        <td class="course-year">2022</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="experience-item reveal-left">
+                            <div class="experience-header">
+                                <h3 class="experience-title">
+                                    Grafik interaktivních titulů
+                                </h3>
+                                <p class="experience-company">
+                                    Nakladatelství Nová Škola
+                                </p>
+                                <p class="experience-duration">2017 – 2025</p>
+                            </div>
+                            <p class="experience-description">
+                                Tvorba interaktivních učebnic, konzultace s
+                                autory, spolupráce na ilustracích a jejich
+                                digitalizaci. Organizace práce v rámci oddělení
+                                a vedení týmu. Podíl na vývoji interního
+                                programu a doplňkových aplikací, spolupráce na
+                                UX/UI designu a tvorba grafických prvků
+                                <a
+                                    class="link"
+                                    href="https://ucebnice.online/miuc/index.php"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >výukové aplikace</a
+                                >. Příprava tištěných učebnic včetně kompletní
+                                sazby v
+                                <strong>Adobe InDesignu</strong
+                                >.<br /><br />Jedním z realizovaných titulů je
+                                soubor <strong>Okénko do češtiny</strong> –
+                                výukové materiály pro výuku českého jazyka
+                                určené vícejazyčným dětem. Projekt vznikl ve
+                                spolupráci s
+                                <a
+                                    class="link"
+                                    href="https://www.linkedin.com/in/jana-nahodilova-536a47232/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Janou Nahodilovou</a
+                                >
+                                z
+                                <a
+                                    class="link"
+                                    href="https://www.okenko.uk/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    České a slovenské školy Okénko v Londýně</a
+                                >.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -346,6 +327,57 @@
                     </div>
                 </div>
             </div>
+
+            <div class="education-section">
+                <div class="education-item reveal-left">
+                    <h4 class="education-title">Vzdělání</h4>
+                    <p class="education-school">
+                        Fakulta informatiky, Masarykova univerzita Brno
+                    </p>
+                    <p class="education-field">
+                        Aplikovaná informatika – specializace grafický design
+                    </p>
+                    <p class="education-year">2015 – 2017</p>
+                    <p class="education-school">
+                        Gymnázium Jana Blahoslava a Střední pedagogická škola
+                        Přerov
+                    </p>
+                    <p class="education-field">
+                        Gymnázium – zakončeno maturitní zkouškou
+                    </p>
+                    <p class="education-year">2010 – 2014</p>
+                </div>
+
+                <div class="education-item reveal-right">
+                    <h4 class="education-title">Kurzy</h4>
+                    <table class="course-table">
+                        <tbody>
+                            <tr>
+                                <td class="course-name">
+                                    Programování WWW aplikací & OOP v C#
+                                </td>
+                                <td class="course-org">VŠB–TU Ostrava</td>
+                                <td class="course-year">2025</td>
+                            </tr>
+                            <tr>
+                                <td class="course-name">JavaScript 2</td>
+                                <td class="course-org">Czechitas</td>
+                                <td class="course-year">2023</td>
+                            </tr>
+                            <tr>
+                                <td class="course-name">JavaScript 1</td>
+                                <td class="course-org">Czechitas</td>
+                                <td class="course-year">2022</td>
+                            </tr>
+                            <tr>
+                                <td class="course-name">HTML a CSS 1</td>
+                                <td class="course-org">Czechitas</td>
+                                <td class="course-year">2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
         <section id="portfolio">
@@ -365,6 +397,9 @@
                                 src="images/petr-verny-800.png"
                                 alt="Web pro maséra a osobního trenéra"
                                 class="portfolio-image"
+                                width="800"
+                                height="500"
+                                loading="lazy"
                             />
                         </a>
                     </div>
@@ -411,6 +446,7 @@
                         >
                     </div>
                 </div>
+
                 <div class="portfolio-item reveal">
                     <div class="portfolio-image-wrapper">
                         <a
@@ -422,6 +458,9 @@
                                 src="images/mhphotography-800.png"
                                 alt="Web pro fotografa"
                                 class="portfolio-image"
+                                width="800"
+                                height="500"
+                                loading="lazy"
                             />
                         </a>
                     </div>
@@ -474,6 +513,9 @@
                                 src="images/mcb-tlumacov-800.png"
                                 alt="Web pro kosmetický salon"
                                 class="portfolio-image"
+                                width="800"
+                                height="500"
+                                loading="lazy"
                             />
                         </a>
                     </div>
@@ -525,69 +567,17 @@
                 <div class="portfolio-item reveal">
                     <div class="portfolio-image-wrapper">
                         <a
-                            href="https://bookla.cz/eshop/produkt/stripky-dusi-aneb-meditace-o-vsem-a-nicem"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                src="images/stripky-dusi-800.png"
-                                alt="Střípky duší"
-                                class="portfolio-image"
-                            />
-                        </a>
-                    </div>
-                    <p class="portfolio-type">Grafická úprava & sazba</p>
-                    <h3 class="portfolio-title">
-                        Střípky duší aneb meditace o všem a ničem
-                    </h3>
-                    <p class="portfolio-description">
-                        Grafická úprava a kompletní sazba básnické sbírky autorů
-                        <a
-                            href="https://www.instagram.com/linda.freesoul.ink"
-                            target="_blank"
-                            rel="noopener"
-                            class="link"
-                            >Lí Free-Soul</a
-                        >
-                        a <strong>Lukáše QiKri</strong>. Součástí projektu byl
-                        návrh typografického zpracování, úprava obálky a
-                        příprava tiskových podkladů. Kniha vyšla v roce 2026
-                        prostřednictvím nakladatelství <strong>Bookla</strong>.
-                    </p>
-                    <div class="portfolio-tags">
-                        <span class="tag">Affinity</span>
-                        <span class="tag">Grafický design</span>
-                        <span class="tag">Sazba</span>
-                    </div>
-                    <div class="portfolio-links">
-                        <a
-                            href="https://bookla.cz/eshop/produkt/stripky-dusi-aneb-meditace-o-vsem-a-nicem"
-                            target="_blank"
-                            rel="noopener"
-                            class="link portfolio-link"
-                            >Bookla</a
-                        >
-                        <a
-                            href="files/stripky-dusi.pdf"
-                            target="_blank"
-                            rel="noopener"
-                            class="link portfolio-link"
-                            >Ukázka</a
-                        >
-                    </div>
-                </div>
-
-                <div class="portfolio-item reveal">
-                    <div class="portfolio-image-wrapper">
-                        <a
                             href="https://silent-silhouettes.netlify.app/"
                             target="_blank"
                             rel="noopener"
                         >
                             <img
                                 src="images/silent-silhouettes-800.png"
-                                alt="Silent Silhouettes - Bootstrap Exercise"
+                                alt="Silent Silhouettes - Bootstrap cvičný webový projekt"
                                 class="portfolio-image"
+                                width="800"
+                                height="500"
+                                loading="lazy"
                             />
                         </a>
                     </div>
@@ -623,6 +613,86 @@
                         >
                     </div>
                 </div>
+
+                <div class="portfolio-item reveal">
+                    <div class="portfolio-image-wrapper">
+                        <a
+                            href="images/stripky-dusi/01.webp"
+                            class="glightbox"
+                            data-gallery="stripky-dusi"
+                            aria-label="Otevřít galerii knihy Střípky duší"
+                        >
+                            <img
+                                src="images/stripky-dusi-800.png"
+                                alt="Střípky duší"
+                                class="portfolio-image"
+                                width="800"
+                                height="600"
+                                loading="lazy"
+                            />
+                        </a>
+                        <!-- Gallery -->
+                        <div hidden>
+                            <a
+                                href="images/stripky-dusi/02.webp"
+                                class="glightbox"
+                                data-gallery="stripky-dusi"
+                            ></a>
+                            <a
+                                href="images/stripky-dusi/03.webp"
+                                class="glightbox"
+                                data-gallery="stripky-dusi"
+                            ></a>
+                            <a
+                                href="images/stripky-dusi/04.webp"
+                                class="glightbox"
+                                data-gallery="stripky-dusi"
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <p class="portfolio-type">Grafická úprava & sazba</p>
+                        <h3 class="portfolio-title">
+                            Střípky duší aneb meditace o všem a ničem
+                        </h3>
+                        <p class="portfolio-description">
+                            Grafická úprava a kompletní sazba básnické sbírky
+                            autorů
+                            <a
+                                href="https://www.instagram.com/linda.freesoul.ink"
+                                target="_blank"
+                                rel="noopener"
+                                class="link"
+                                >Lí Free-Soul</a
+                            >
+                            a <strong>Lukáše QiKri</strong>. Součástí projektu
+                            byl návrh typografického zpracování, úprava obálky a
+                            příprava tiskových podkladů. Kniha vyšla v roce 2026
+                            prostřednictvím nakladatelství
+                            <strong>Bookla</strong>.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Affinity</span>
+                            <span class="tag">Grafický design</span>
+                            <span class="tag">Sazba</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a
+                                href="https://bookla.cz/eshop/produkt/stripky-dusi-aneb-meditace-o-vsem-a-nicem"
+                                target="_blank"
+                                rel="noopener"
+                                class="link portfolio-link"
+                                >Bookla</a
+                            >
+                            <a
+                                href="images/stripky-dusi/01.webp"
+                                class="link portfolio-link"
+                                data-open-gallery
+                                >Ukázka</a
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -631,48 +701,52 @@
                 <h2 class="section-title">Kontakt</h2>
             </div>
 
-            <div class="contact-intro reveal">
-                <h3>Máte projekt nebo pracovní nabídku?</h3>
-                <p>
-                    Kromě stálé pozice ve vývoji jsem otevřená i menším či
-                    krátkodobým spolupracím na webových stránkách, vizuální
-                    identitě nebo tiskovinách. Neváhejte se mi ozvat.
-                </p>
-            </div>
-
             <div class="contact-content">
                 <div class="contact-info reveal-left">
-                    <div class="contact-info-item">
-                        <p class="contact-label">Místo</p>
-                        <p class="contact-value">Brno</p>
-                    </div>
+                    <h3 class="contact-heading">
+                        Máte projekt nebo pracovní nabídku?
+                    </h3>
+                    <p class="contact-text">
+                        Kromě stálé pozice ve vývoji jsem otevřená i menším či
+                        krátkodobým spolupracím na webových stránkách, vizuální
+                        identitě nebo tiskovinách. Neváhejte se mi ozvat.
+                    </p>
 
-                    <div class="contact-info-item">
-                        <p class="contact-label">E-mail</p>
-                        <p class="contact-value">
-                            <a href="mailto:ahabanova95@gmail.com"
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-label">E-mail</span>
+                            <a
+                                href="mailto:ahabanova95@gmail.com"
+                                class="link contact-value"
                                 >ahabanova95@gmail.com</a
                             >
-                        </p>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <p class="contact-label">Telefon</p>
-                        <p class="contact-value">
-                            <a href="tel:+420605319071">605 319 071</a>
-                        </p>
-                    </div>
+                        </li>
+                        <li>
+                            <span class="contact-label">Telefon</span>
+                            <a
+                                href="tel:+420605319071"
+                                class="link contact-value"
+                                >605 319 071</a
+                            >
+                        </li>
+                        <li>
+                            <span class="contact-label">Místo</span>
+                            <span class="contact-value">Brno</span>
+                        </li>
+                    </ul>
 
                     <div class="social-links">
                         <a
                             href="https://github.com/ahabanova"
                             target="_blank"
+                            rel="noopener"
                             class="link social-link"
                             >GitHub</a
                         >
                         <a
                             href="https://www.linkedin.com/in/andrea-habanova/"
                             target="_blank"
+                            rel="noopener"
                             class="link social-link"
                             >LinkedIn</a
                         >
@@ -727,6 +801,8 @@
             <p>© 2026 Andrea Habáňová</p>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
